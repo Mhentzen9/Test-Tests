@@ -1,1 +1,3 @@
 This is just a repository for me to learn how to use Playwright to create automated tests and then push changes back here. It will be filled with random tests. 
+
+I have learned the basic process of making edits, staging, committing, and pushing. Still have to work on cloning and all the other stuff, but I'm getting the hang of it. This new bit of the readme is being done within vscode after pulling down the branch so I can get more practice.
