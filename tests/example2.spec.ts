@@ -41,3 +41,12 @@ test('check Java page', async ({ page }) => {
 
 
 });
+
+test('open Playwright Training', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+  await page.getByRole('button', { name: 'Node.js' }).hover();
+  await page.getByLabel('Main', { exact: true }).getByRole('link', { name: 'Python' }).click();
+  const page1Promise = page.waitForEvent('popup');
+  await page.getByRole('link', { name: 'Playwright Training(opens in' }).click();
+  const page1 = await page1Promise;
+});
